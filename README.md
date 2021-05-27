@@ -1,7 +1,9 @@
 # WordPress Provision through Ansible Playbook.
 [![Builds](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 ## Description:
-A simple wordpress site provision through ansible playbook. Furthermore, the ansible playbook is installed a complete packages like lamp. Also, you can create multiple wordpress sites with appending your descition. In addition, the playbook is basically designed for ubuntu 20.04 and its using Nginx. (So, if you have facing any issues with other debain distributers please ping me via linked that would be helpful to correct that error). 
+A simple wordpress site provision through ansible-playbook. Furthermore, the ansible playbook is installed in complete packages like the lamp. Also, you can create multiple WordPress sites with appending your decision. In addition, the playbook is basically designed for ubuntu 20.04, and it's using Nginx. 
+
+It's just a try for application provision through ansible. Maybe it has bugs with other Debian distributer. So please let me know if you have to face any issues while using this then I will help you to figure out and correct the issue. So, please ping me via linked that would be more helpful to correct if any bugs you got.
 
 ## Feutures:
 - Easy to create wordpress sites on ubuntu (with the help of nginx)
@@ -61,7 +63,7 @@ ansible-playbook -i hosts main.yml
 https://hosts.cx/
 
 ## Conclusion: 
-It's just a try for application provision through ansible. Maybe it have bugs with other versions in debain distributer so please let me know if you have facing any issues while using this then I will help you to digg out and correct the issue
+It's just a try for application provision through ansible. Maybe it has bugs with other Debian distributer. So please let me know if you have to face any issues while using this then I will help you to figure out and correct the issue. So, please ping me via linked that would be more helpful to correct if any bugs you got.
 
 _By_
 
