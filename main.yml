@@ -1,18 +1,18 @@
 ---
 - name: Installing Nginx And configuration
-  hosts: ubuntu
+  hosts: all
   become: true
   vars_files:
     - vars.vars
   vars_prompt:
     - name: dname
-      prompt: Enter Your Domain "eg example.com"
+      prompt: Enter Your Domain "eg example.com" and its must not exist
       private: no
     - name: mysql_user
-      prompt: Enter Your Wordpress Databases Username "eg wordpress"
+      prompt: Enter Your Wordpress Databases Username "eg wordpress" and its must not exist
       private: no
     - name: mysql_db
-      prompt: Enter Your Wordpress Database Name "eg wordpressdb"
+      prompt: Enter Your Wordpress Database Name "eg wordpressdb" and its must not exist
       private: no
     - name: mysql_pw
       prompt: Enter Your Wordpress Databases Password "eg wordpressdbpassword"
