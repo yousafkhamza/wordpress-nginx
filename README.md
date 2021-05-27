@@ -5,7 +5,7 @@ A simple wordpress site provision through ansible-playbook. Furthermore, the ans
 
 It's just a try for application provision through ansible. Maybe it has bugs with other Debian distributer. So please let me know if you have to face any issues while using this then I will help you to figure out and correct the issue. So, please ping me via linked that would be more helpful to correct if any bugs you got.
 
-## Feutures:
+## Features:
 - Easy to create wordpress sites on ubuntu (with the help of nginx)
 - Domain name, wordpress databases, password is appending your descision. you don't needs to edit in core files who used this.
 - All the components are installed through the playbook like (Nginx, MySQL, PHP, Wordpress)
