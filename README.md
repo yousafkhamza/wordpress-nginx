@@ -18,7 +18,7 @@ It's just a try for application provision through ansible. Maybe it has bugs wit
 - WordPress 5.7 
 - Ansible2 (Ansible-Master. Please note that I have used master server is RedHat Distributer "amazon-linux") 
 
-## Prerequisites
+## Pre Requisites:
 - In this scenario we have used Master server as Amazon Linux 2 and Client  server as Ubuntu 18.04 LTS with desired ports 22, 80 opened. 
 - Master server installed with [Ansible2](https://docs.ansible.com/ansible/2.3/index.html) (For your reference visit [How to install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html))
 ##### Ansible Modules used:
@@ -65,7 +65,7 @@ ansible-playbook -i hosts main.yml
 ## Sample Screenshot: 
 ![alt text](https://i.ibb.co/LvZC0nB/sample.png)
 
-### Optional Security Feature
+### Optional Security Feature:
 
 Here we have used the "variables.vars" file to pass the variables as a plain text, to overcome this we can encrypt the files with a password. [Ansible_vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) encrypts variables and files so you can protect sensitive content such as passwords or keys rather than leaving it visible as plaintext in playbooks or roles.
 
