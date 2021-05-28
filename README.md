@@ -18,6 +18,12 @@ It's just a try for application provision through ansible. Maybe it has bugs wit
 - WordPress 5.7 
 - Ansible2 (Ansible-Master. Please note that I have used master server is RedHat Distributer "amazon-linux") 
 
+## Prerequisites
+- In this scenario we have used Master server as Amazon Linux 2 and Client  server as Ubuntu 18.04 LTS with desired ports 22, 80 opened. 
+- Master server installed with [Ansible2](https://docs.ansible.com/ansible/2.3/index.html) (For your reference visit [How to install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html))
+##### Ansible Modules used:
+[Inventory](https://docs.ansible.com/ansible/2.3/intro_inventory.html) , [File](https://docs.ansible.com/ansible/2.3/list_of_files_modules.html), [Database](https://docs.ansible.com/ansible/2.3/list_of_database_modules.html), [Shell](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html)
+
 ## How to Use:
 ### Method 1
 ```sh
@@ -58,6 +64,19 @@ ansible-playbook -i hosts main.yml
 
 ## Sample Screenshot: 
 ![alt text](https://i.ibb.co/LvZC0nB/sample.png)
+
+### Optional Security Feature
+
+Here we have used the "variables.vars" file to pass the variables as a plain text, to overcome this we can encrypt the files with a password. [Ansible_vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) encrypts variables and files so you can protect sensitive content such as passwords or keys rather than leaving it visible as plaintext in playbooks or roles.
+
+To encrypt a file, use the ansible-vault encrypt command.
+```sh
+ansible-vault encrypt main.yml hosts KEY_NAME.pem
+```
+To prompt for the password:
+```sh
+ansible-playbook -i hosts --ask-vault-pass main.yml
+```
 
 ## If you have using a demo website Please use the site for create localhost loading.
 https://hosts.cx/
