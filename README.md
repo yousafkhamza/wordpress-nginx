@@ -22,7 +22,10 @@ It's just a try for application provision through ansible. Maybe it has bugs wit
 - In this scenario we have used Master server as Amazon Linux 2 and Client  server as Ubuntu 18.04 LTS with desired ports 22, 80 opened. 
 - Master server installed with [Ansible2](https://docs.ansible.com/ansible/2.3/index.html) (For your reference visit [How to install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html))
 ##### Ansible Modules used:
-[Inventory](https://docs.ansible.com/ansible/2.3/intro_inventory.html) , [File](https://docs.ansible.com/ansible/2.3/list_of_files_modules.html), [Database](https://docs.ansible.com/ansible/2.3/list_of_database_modules.html), [Shell](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html)
+- [Inventory](https://docs.ansible.com/ansible/2.3/intro_inventory.html) 
+- [File](https://docs.ansible.com/ansible/2.3/list_of_files_modules.html)
+- [Database](https://docs.ansible.com/ansible/2.3/list_of_database_modules.html)
+- [Shell](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html)
 
 ## How to Use:
 ### Method 1
