@@ -32,8 +32,8 @@ amazon-linux-extras ansible2 -y
 ```
 > Please create your client key.pem file and hosts (Inventory) file manually and please copy the same to the working directory which you used. 
 ```sh
-git clone https://github.com/yousafkhamza/Wordpress-Nginx.git
-cd Wordpress-Nginx
+git clone https://github.com/yousafkhamza/wordpress-nginx.git
+cd wordpress-nginx
 ansible -i hosts all -m ping <========== its just check your master and client connection with your inventory file which you copied or create manually.
 ansible-playbook -i hosts main.yml
 ```
