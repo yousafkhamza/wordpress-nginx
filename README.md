@@ -54,8 +54,8 @@ ssh -i key.pem ec2-user@public_ip    <============== public IP will be printed a
 > After login Ansible Master:
 ```sh
 yum install git -y
-git clone https://github.com/yousafkhamza/Wordpress-Nginx.git
-cd Wordpress-Nginx
+git clone https://github.com/yousafkhamza/wordpress-nginx.git
+cd wordpress-nginx
 cp ../key.pem ./
 cp ../hosts ./
 ansible -i hosts all -f 1 -m ping
